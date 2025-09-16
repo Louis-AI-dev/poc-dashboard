@@ -1,0 +1,13 @@
+precision    recall  f1-score   support
+
+                 Baby Care       0.89      0.80      0.84        30
+  Beauty and Personal Care       0.97      0.93      0.95        30
+                 Computers       0.97      1.00      0.98        30
+Home Decor & Festive Needs       0.96      0.90      0.93        30
+           Home Furnishing       0.85      0.97      0.91        30
+          Kitchen & Dining       0.90      0.93      0.92        30
+                   Watches       1.00      1.00      1.00        30
+
+                  accuracy                           0.93       210
+                 macro avg       0.93      0.93      0.93       210
+              weighted avg       0.93      0.93      0.93       210
