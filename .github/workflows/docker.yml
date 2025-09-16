@@ -21,15 +21,15 @@ jobs:
         uses: docker/login-action@v2
         with:
           registry: ghcr.io
-          username: ${{ github.actor }}
+          username: louis-ai-dev
           password: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Build Docker image
         run: |
-          docker build -t ghcr.io/${{ github.repository_owner }}/poc-dashboard:${{ github.sha }} .
-          docker tag ghcr.io/${{ github.repository_owner }}/poc-dashboard:${{ github.sha }} ghcr.io/${{ github.repository_owner }}/poc-dashboard:latest
+          docker build -t ghcr.io/louis-ai-dev/poc-dashboard:${{ github.sha }} .
+          docker tag ghcr.io/louis-ai-dev/poc-dashboard:${{ github.sha }} ghcr.io/louis-ai-dev/poc-dashboard:latest
 
       - name: Push Docker image
         run: |
-          docker push ghcr.io/${{ github.repository_owner }}/poc-dashboard:${{ github.sha }}
-          docker push ghcr.io/${{ github.repository_owner }}/poc-dashboard:latest
+          docker push ghcr.io/louis-ai-dev/poc-dashboard:${{ github.sha }}
+          docker push ghcr.io/louis-ai-dev/poc-dashboard:latest
