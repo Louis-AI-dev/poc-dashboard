@@ -6,7 +6,7 @@ from sklearn.metrics import confusion_matrix, roc_curve, auc
 import os
 
 # ===============================
-# CONFIGURATION DU DASHBOARD
+# CONFIGURATION DU DASHBOARD !
 # ===============================
 st.set_page_config(page_title="Dashboard POC - Comparaison Baseline vs CLIP", layout="wide")
 
